@@ -10,6 +10,8 @@ Virtual machines are managed through Cockpit with the Machines plugin.
 
 <img width="1903" height="949" alt="image" src="https://github.com/user-attachments/assets/4690a74e-2449-491a-869f-0133f7fcf523" />
 
+<img width="1904" height="356" alt="image" src="https://github.com/user-attachments/assets/133aac43-bfa5-4522-8080-2071146a0ac4" />
+
 
 ## Hypervisor
 
