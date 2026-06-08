@@ -2,35 +2,75 @@
 
 ## Overview
 
-EVA serves as the central infrastructure node of my home network.
+EVA hosts an OPNsense virtual machine that serves as my primary router and firewall.
 
-The server hosts an OPNsense virtual machine that acts as the primary router and firewall for the network. Traffic enters through a dedicated WAN interface and is routed to the local network through a separate LAN interface.
+Although the ISP router remains connected to the internet connection, all of my personal devices are connected through OPNsense. The ISP router is only used to provide upstream internet access to EVA.
 
-Remote access is provided through Tailscale, allowing secure access to internal services without exposing them directly to the internet.
+OPNsense is used daily and is responsible for routing, firewall management, and DHCP services for my personal network.
 
 ## Network Topology
 
-
+```text
 Internet
     │
 ISP Router
     │
- NIC1 (WAN)
-    │
-+-----------+
-|    EVA    |
-+-----------+
-    │
- NIC2 (LAN)
+WAN
     │
 OPNsense VM
+(KVM/QEMU)
     │
-Network Switch
-   ├── MikroTik Access Point
-   └── Ethernet Devices
+LAN
+    │
+D-Link Switch
+    ├── Desktop PC
+    ├── Laptop
+    ├── MikroTik Access Point
+    └── Other Devices
+```
 
+## Router Platform
 
-## Hardware
+### OPNsense VM
+
+Operating System:
+
+* FreeBSD (OPNsense)
+
+Hosted on:
+
+* Debian Linux
+* KVM/QEMU virtualization
+
+Responsibilities:
+
+* Internet routing
+* Firewall management
+* DHCP services
+* DNS forwarding
+* Network management
+
+## DHCP
+
+DHCP services are provided by OPNsense using Kea DHCP.
+
+All personal devices receive their network configuration from OPNsense rather than directly from the ISP router.
+
+## Remote Access
+
+Remote access is provided through Tailscale.
+
+This allows secure access to services hosted on EVA without exposing them directly to the public internet.
+
+Services accessible remotely include:
+
+* Nextcloud
+* Jellyfin
+* Navidrome
+* Ollama
+* Administrative interfaces
+
+## Network Equipment
 
 ### Switch
 
@@ -40,52 +80,36 @@ Network Switch
 
 * MikroTik router configured as an access point
 
-## Routing
+## Core Network Services
 
-Routing and firewall functions are handled by OPNsense running as a virtual machine under KVM/QEMU.
-
-### OPNsense VM
-
-Operating System:
-
-* FreeBSD (OPNsense)
-
-Responsibilities:
+OPNsense serves as the primary network gateway for my personal network and provides:
 
 * Routing
 * Firewall management
-* DHCP
-* Network segmentation
-* Gateway management
+* Kea DHCP
+* Unbound DNS
+* DNS forwarding and caching
+* Network policy management
 
-## Remote Access
+All personal devices receive their network configuration from OPNsense and use Unbound for DNS resolution.
 
-Remote connectivity is provided using Tailscale.
-
-Benefits:
-
-* Secure encrypted access
-* No public service exposure required
-* Access to internal services from external networks
 
 ## Design Goals
 
-The networking design focuses on:
+The network is designed to:
 
-* Security
-* Simplicity
-* Learning enterprise networking concepts
-* Self-hosted infrastructure management
+* Learn enterprise networking concepts
+* Maintain control over routing and firewall policies
+* Provide secure remote access
+* Support self-hosted services
+* Minimize unnecessary complexity
 
 ## Future Improvements
 
-Planned upgrades include:
-
-* UPS integration
-* VLAN implementation
-* Monitoring and alerting
-* Additional network segmentation
-* Redundant backup infrastructure
+* UPS deployment
+* Network monitoring
+* VLAN implementation if required
+* Additional infrastructure services
 
 ```
 ```
