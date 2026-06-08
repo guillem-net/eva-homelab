@@ -10,6 +10,10 @@ EVA is my homelab built on repurposed enterprise hardware.
 
 The project started on an Intel i5-2400M system with 8 GB of RAM and a single external drive. Over time it evolved into a Debian-based server providing networking, storage, virtualization, cloud, media, and AI services.
 
+## About the Name
+
+The server is named EVA after a label left on the chassis by an employee of the company that retired the hardware.
+
 ## Hardware
 
 * Intel Xeon E5-2630L v2
@@ -17,6 +21,14 @@ The project started on an Intel i5-2400M system with 8 GB of RAM and a single ex
 * SAS and SATA storage
 * 16-port D-Link switch
 * MikroTik access point
+
+## Infrastructure
+
+* 1 Debian host
+* 2 virtual machines
+* 128 GB ECC RAM
+* 8.5 TB total storage
+* 1 year of continuous operation
 
 ## Virtualization
 
@@ -33,7 +45,7 @@ The project started on an Intel i5-2400M system with 8 GB of RAM and a single ex
 * Navidrome
 * Ollama
 * Portainer
-* Tailscale
+* Tailscale for secure remote access
 
 ## Storage
 
