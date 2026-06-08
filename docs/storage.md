@@ -1,3 +1,4 @@
+
 # Storage
 
 ## Overview
@@ -25,6 +26,9 @@ Purpose:
 
 * High-performance storage
 * Frequently accessed data
+
+<img width="1856" height="4096" alt="SAS" src="https://github.com/user-attachments/assets/c520883c-66c5-47f1-a371-57869523d48a" />
+
 
 ### SATA Array
 
