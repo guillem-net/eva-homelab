@@ -8,6 +8,9 @@ Rather than using a dedicated virtualization platform, I chose to build directly
 
 Virtual machines are managed through Cockpit with the Machines plugin.
 
+<img width="1903" height="949" alt="image" src="https://github.com/user-attachments/assets/4690a74e-2449-491a-869f-0133f7fcf523" />
+
+
 ## Hypervisor
 
 Host Operating System:
