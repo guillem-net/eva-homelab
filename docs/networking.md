@@ -10,7 +10,7 @@ Remote access is provided through Tailscale, allowing secure access to internal 
 
 ## Network Topology
 
-```text
+
 Internet
     │
 ISP Router
@@ -28,7 +28,7 @@ OPNsense VM
 Network Switch
    ├── MikroTik Access Point
    └── Ethernet Devices
-```
+
 
 ## Hardware
 
