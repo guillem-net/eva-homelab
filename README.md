@@ -1,6 +1,8 @@
-# eva-homelab
-Linux &amp; infrastructure enthusiast. Building and maintaining self-hosted services, virtualization, and networking on enterprise hardware.
+Hi, I'm Guillem
 
+17-year-old Linux and infrastructure enthusiast from Catalonia, Spain.
+
+I operate a homelab called EVA, built on repurposed enterprise hardware. The project started on a second-generation Intel i5 system and evolved into a Debian-based server running virtualization, networking, storage, backup, and self-hosted services.
 
 # EVA
 
