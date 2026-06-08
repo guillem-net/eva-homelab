@@ -8,9 +8,6 @@ Although the ISP router remains connected to the internet connection, all of my 
 
 OPNsense is used daily and is responsible for routing, firewall management, and DHCP services for my personal network.
 
-<img width="1903" height="949" alt="image" src="https://github.com/user-attachments/assets/ff6b56ab-34b1-4db5-9469-925bb4097dc7" />
-
-<img width="1904" height="356" alt="image" src="https://github.com/user-attachments/assets/aa32204a-0409-4885-b496-78fdca5fa641" />
 
 
 ## Network Topology
