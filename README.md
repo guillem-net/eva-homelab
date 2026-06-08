@@ -2,46 +2,51 @@
 Linux &amp; infrastructure enthusiast. Building and maintaining self-hosted services, virtualization, and networking on enterprise hardware.
 
 
-# Hi, I'm Guillem
+# EVA
 
-17-year-old Linux and infrastructure enthusiast from Catalonia, Spain.
+EVA is my homelab built on repurposed enterprise hardware.
 
-I operate a homelab called EVA, built on repurposed enterprise hardware. The project started on a second-generation Intel i5 system and evolved into a Debian-based server running virtualization, networking, storage, backup, and self-hosted services.
+The project started on an Intel i5-2400M system with 8 GB of RAM and a single external drive. Over time it evolved into a Debian-based server providing networking, storage, virtualization, cloud, media, and AI services.
 
-## Technologies
+## Hardware
+
+* Intel Xeon E5-2630L v2
+* 128 GB ECC RAM
+* SAS and SATA storage
+* 16-port D-Link switch
+* MikroTik access point
+
+## Virtualization
 
 * Debian Linux
 * KVM/QEMU
+* OPNsense VM
+* Nextcloud VM
+
+## Services
+
 * OPNsense
-* Tailscale
 * Nextcloud
 * Jellyfin
 * Navidrome
 * Ollama
-* RAID Storage
-* Bash Scripting
+* Portainer
+* Tailscale
 
-## Current Focus
+## Storage
 
-* Linux administration
-* Networking
-* Infrastructure engineering
-* Self-hosting
-* Open-source technologies
+* RAID 0 data array
+* RAID 1 mirrored array
+* Dedicated backup drive
+* Automated backup scripts
 
-## Featured Project
+## Lessons Learned
 
-### EVA
+* Migrating infrastructure from low-power hardware to enterprise hardware
+* Linux system administration
+* Virtualization with KVM/QEMU
+* Storage and RAID management
+* Hardware troubleshooting, including recovering from a failed SAS controller
 
-A self-hosted infrastructure platform running on retired enterprise hardware.
+EVA continues to serve as my platform for learning infrastructure engineering, networking, and self-hosting.
 
-Features:
-
-* Virtualized firewall and routing
-* Private cloud services
-* Media streaming
-* Local AI workloads
-* Automated backups
-* RAID-backed storage
-
-Always learning, always breaking things, and hopefully fixing them again.
